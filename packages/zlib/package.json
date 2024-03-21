@@ -1,0 +1,14 @@
+{
+  "name": "@darkcord/zlib",
+  "description": "Alternative to zlib-sync for @darkcord/ws",
+  "version": "1.0.2",
+  "main": "./cpp.js",
+  "types": "./cpp.d.ts",
+  "type": "commonjs",
+  "scripts": {
+    "build": "node-gyp configure build"
+  },
+  "dependencies": {
+    "@darkcord/utils": "workspace:^"
+  }
+}

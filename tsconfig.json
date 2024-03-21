@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "module": "NodeNext",
+    "skipLibCheck": true,
+    "allowJs": false,
+    "removeComments": false,
+    "declarationMap": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

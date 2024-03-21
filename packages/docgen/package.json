@@ -1,0 +1,31 @@
+{
+  "name": "@darkcord/docgen",
+  "version": "1.0.4",
+  "main": "./dist/docs.js",
+  "typings": "./dist/docs.d.ts",
+  "bin": "./dist/cli.js",
+  "exports": {
+    ".": {
+      "import": "./dist/docs.mjs",
+      "require": "./dist/docs.js",
+      "types": "./dist/docs.d.ts"
+    }
+  },
+  "scripts": {
+    "pretty": "pnpm prettier --write ."
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "commander": "^10.0.0",
+    "typedoc": "^0.23.25"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.0",
+    "prettier": "^2.8.4",
+    "tsup": "^6.6.3",
+    "typescript": "^4.9.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

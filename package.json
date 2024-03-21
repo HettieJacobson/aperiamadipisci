@@ -1,0 +1,34 @@
+{
+  "name": "aperiamadipisci",
+  "description": "darkcord workspace",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "pretty": "pnpm prettier --write .",
+    "build": "pnpm pretty && node scripts/build.js"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.14",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "darkcord": "workspace:^",
+    "eslint": "^8.56.0",
+    "eslint-plugin-import": "^2.29.1",
+    "interactions": "^0.0.1",
+    "prettier": "^2.8.8",
+    "ts-node": "^10.9.2",
+    "tscpaths": "^0.0.9",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "tsup": "^6.7.0"
+  },
+  "author": "JacksonGerlach",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HettieJacobson/aperiamadipisci.git"
+  },
+  "homepage": "https://github.com/HettieJacobson/aperiamadipisci.git",
+  "version": "1.0.0"
+}

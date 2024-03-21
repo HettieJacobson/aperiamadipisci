@@ -1,0 +1,61 @@
+{
+  "name": "darkcord",
+  "version": "1.6.0",
+  "description": "A NodeJS Package to interact with Discord API",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JustAWaifuHunter/darkcord.git",
+    "directory": "packages/darkcord"
+  },
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "typings": "./typings/index.d.ts",
+  "scripts": {
+    "test": "pnpm pre && node test.js",
+    "pre:windows": "prepare.bat",
+    "pre:linux": "./prepare.sh",
+    "pre": "node scripts/prepare.js",
+    "c": "tsc && tscpaths -p tsconfig.json -s ./src -o ./typings && tscpaths -p tsconfig.json -s ./src -o ./dist",
+    "copy_wasm": "xcopy \"src\\utils\\zlib.wasm\" \"dist\\utils\"",
+    "lint": "pnpm eslint --ext .ts --fix **/src/**"
+  },
+  "dependencies": {
+    "@darkcord/interactions": "workspace:^",
+    "@darkcord/rest": "workspace:^",
+    "@darkcord/utils": "workspace:^",
+    "@darkcord/ws": "workspace:^",
+    "discord-api-types": "^0.37.69",
+    "ts-mixer": "^6.0.3",
+    "undici": "^5.28.3",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@darkcord/docgen": "workspace:^"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.8",
+    "erlpack": "^0.1.4",
+    "tweetnacl": "^1.0.3",
+    "zlib-sync": "^0.1.9"
+  },
+  "keywords": [
+    "discord",
+    "ws",
+    "websocket",
+    "gateway",
+    "eris",
+    "discord.js",
+    "typescript",
+    "ts",
+    "javascript",
+    "js",
+    "http",
+    "interactions",
+    "zlib",
+    "erlpack",
+    "tweetnacl",
+    "api",
+    "wrapper",
+    "undici"
+  ]
+}
